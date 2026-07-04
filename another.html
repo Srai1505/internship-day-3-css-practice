@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+
+    animation: rotateColor 4s infinite;
+}
+
+@keyframes rotateColor {
+    0% {
+        background-color: rgb(255, 0, 242);
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: rgb(250, 68, 226);
+        transform: rotate(90deg);
+    }
+
+    50% {
+        background-color: rgb(99, 83, 245);
+        transform: rotate(180deg);
+    }
+
+    75% {
+        background-color: rgb(79, 202, 240);
+        transform: rotate(270deg);
+    }
+
+    100% {
+        background-color: purple;
+        transform: rotate(360deg);
+    }
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+</body>
+</html>
